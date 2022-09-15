@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <div>
+        <h3>What is the difference between local storage and session storage?</h3>
+        <p>localStorage and sessionStorage are relatively new APIs (meaning, not all legacy browsers will support them)
+            and are
+            near identical (both in APIs and capabilities) with the sole exception of persistence. sessionStorage (as
+            the name
+            suggests) is only available for the duration of the browser session (and is deleted when the tab or window
+            is closed) -
+            it does, however, survive page reloads.
+
+            Clearly, if the data you are storing needs to be available on an ongoing basis then localStorage is
+            preferable to
+            sessionStorage - although you should note both can be cleared by the user so you should not rely on the
+            continuing
+            existence of data in either case.
+
+            localStorage and sessionStorage are perfect for persisting non-sensitive data needed within client scripts
+            between pages
+            (for example: preferences, scores in games). The data stored in localStorage and sessionStorage can easily
+            be read or
+            changed from within the client/browser so should not be relied upon for storage of sensitive or
+            security-related data
+            within applications.</p>
+    </div>
+</body>
+
+</html>
